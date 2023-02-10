@@ -1,16 +1,21 @@
-import {Card, Grid, Text} from '@nextui-org/react';
+import {Card, Grid, styled, Text} from '@nextui-org/react';
+
+const DivBanner = styled('div', {
+  pt: '$10',
+  pb: '$20',
+  '@media (min-width: 650px)': {
+    pt: '$20',
+  },
+});
 
 const Banner = () => {
   const technologies: string[] = [
     'Next JS', 'Spring Boot', 'Kafka', 'Docker', 'Kubernetes', 'Google Cloud',
-  ]
+    'Elasticsearch', 'MySQL'
+  ];
 
   return (
-    <div
-      style={{
-        padding: '5rem 0',
-      }}
-    >
+    <DivBanner>
       <Grid.Container justify='center'>
         <Grid>
           <Card
@@ -116,7 +121,7 @@ const Banner = () => {
           }
         </Grid.Container>
       </div>
-    </div>
+    </DivBanner>
   );
 }
 
