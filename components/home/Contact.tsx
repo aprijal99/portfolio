@@ -4,7 +4,7 @@ const DivContactLeft = styled('div', {
   d: 'flex',
   jc: 'center',
   mb: '$8',
-  '@media (min-width: 800px)': {
+  '@media (min-width: 848px)': {
     jc: 'initial',
     mb: 'initial',
     fd: 'column',
@@ -17,7 +17,7 @@ const DivContactLeft = styled('div', {
 const DivContactRight = styled('div', {
   ta: 'center',
   mb: '$10',
-  '@media (min-width: 800px)': {
+  '@media (min-width: 848px)': {
     ta: 'initial',
     mb: 'initial',
     position: 'fixed',
@@ -37,7 +37,7 @@ const Contact = () => {
           target='_blank'
           css={{
             mr: '$10',
-            '@media (min-width: 800px)': {
+            '@media (min-width: 848px)': {
               mb: '$10',
             },
           }}
@@ -53,7 +53,7 @@ const Contact = () => {
           target='_blank'
           css={{
             mr: '$10',
-            '@media (min-width: 800px)': {
+            '@media (min-width: 848px)': {
               mb: '$10',
             },
           }}
@@ -76,9 +76,12 @@ const Contact = () => {
         </Link>
       </DivContactLeft>
       <DivContactRight>
-        <Text>
-          aprijalghiyas@gmail.com
-        </Text>
+        <Link
+          href='mailto:aprijalghiyas@gmail.com'
+          target='_blank'
+        >
+          <Text>aprijalghiyas@gmail.com</Text>
+        </Link>
       </DivContactRight>
     </>
   );

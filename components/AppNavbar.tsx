@@ -34,9 +34,9 @@ const AppNavbar = () => {
           },
         }}
       >
-        <Navbar.Link href='/' isActive>Home</Navbar.Link>
+        <Navbar.Link href='/' isActive>About</Navbar.Link>
         <Navbar.Link href='#'>Projects</Navbar.Link>
-        <Navbar.Link href='#'>Blog</Navbar.Link>
+        <Navbar.Link href='#'>Contact</Navbar.Link>
       </Navbar.Content>
       <Navbar.Toggle showIn='xs' />
       <Navbar.Collapse
@@ -58,7 +58,7 @@ const AppNavbar = () => {
               minWidth: '100%'
             }}
           >
-            Home
+            About
           </Link>
         </Navbar.CollapseItem>
         <Navbar.CollapseItem>
@@ -84,7 +84,7 @@ const AppNavbar = () => {
               minWidth: '100%'
             }}
           >
-            Blog
+            Contact
           </Link>
         </Navbar.CollapseItem>
       </Navbar.Collapse>
